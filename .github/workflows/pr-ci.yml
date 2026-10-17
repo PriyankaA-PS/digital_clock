@@ -52,3 +52,7 @@ jobs:
       - name: Run Django tests
         working-directory: backend
         run: python manage.py test clock
+        
+      - name: Check dependency security
+        working-directory: frontend
+        run: npm audit --audit-level=high
