@@ -132,5 +132,5 @@ MAILERS = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
+    "https://digital-clock-frontend-naak.onrender.com/",
 ]
