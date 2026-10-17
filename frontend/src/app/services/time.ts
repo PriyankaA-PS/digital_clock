@@ -13,7 +13,7 @@ export interface TimeResponse {
 })
 export class TimeService {
 
-  private apiUrl = 'http://127.0.0.1:8000/api/time/';
+  private apiUrl = 'https://digital-clock-5zut.onrender.com/api/time/';
 
   constructor(private http: HttpClient) {}
 
