@@ -1,0 +1,21 @@
+<div class="clock-container" [class.blue]="theme() === 'blue'" [class.dark]="theme() === 'dark'">
+    <div class="day">
+        {{day}}
+    </div>
+    <div class="time">
+       {{formatTime()}}
+    </div>
+    <div class="date">
+        {{date}}
+    </div>
+
+    <div class="clock-controls">
+        <button (click) = "toggleHourFormat()">Switch to 24-hour</button>
+        <button (click)="toggleSeconds()">Hide seconds</button>
+    </div>
+
+    <div class="secondary-controls">
+    <button (click)="toggleTheme()">{{theme() === 'blue' ? '🎨 Dark Theme' : '🎨 Blue Theme'}}</button>
+    <button (click) = "copyTime()">📋 Copy</button>
+</div>
+</div>
